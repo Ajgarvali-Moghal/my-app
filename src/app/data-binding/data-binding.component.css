@@ -1,0 +1,14 @@
+.main{
+    text-align: center;
+    height:100vh;
+    width:100%;
+   background-color: rgb(101, 206, 206);
+}
+.btn{
+    height:40px;
+    width:80px;
+    border-radius: 20px;
+    background-color: rgb(197, 40, 40);
+    color: white;
+    box-shadow: 5px 5px 4px rgb(103, 33, 33);
+}

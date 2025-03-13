@@ -1,0 +1,15 @@
+<div class="main">
+    <h1 style="margin: 0;">data-binding</h1>
+    <!-- two way data binding -->
+    <!-- <input type="text" [(ngModel)]="mobile" (keyup)="submit()"> -->
+     <!-- calculator -->
+    <h1>Calculator</h1>
+    <h3>Result:{{result}}</h3>
+    <label>Number 1:</label>
+    <input type="number" [(ngModel)]="num1"><br>
+    <label>Number 2:</label>
+    <input type="number"[(ngModel)]="num2"><br><br>
+    <button class="btn" (click)="add()" [disabled]="!num1 || !num2">Add</button>
+</div>
+
+

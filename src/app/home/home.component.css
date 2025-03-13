@@ -1,0 +1,31 @@
+body{
+    margin:0%;
+}
+.main{
+    display: flex;
+    gap:7px;
+}
+.left{
+    text-align: center;
+    height:100vh;
+    width:20%;
+    background-color: rgb(74, 129, 153);
+    color: white;
+}
+.right{
+    background-image: url(https://images.pexels.com/photos/843227/pexels-photo-843227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100vh;
+    width:80%;
+    background-color: rgb(87, 194, 146);
+}
+.btn{
+    height:35px;
+    width:180px;
+    background-color: rgb(197, 40, 40);
+    color: white;
+    box-shadow: 5px 5px 4px rgb(103, 33, 33);
+    border-radius: 20px;
+
+}

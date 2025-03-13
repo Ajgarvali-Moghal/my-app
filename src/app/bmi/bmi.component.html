@@ -1,0 +1,12 @@
+<div class="main">
+    <div class="cal">
+        <h1 style="margin: 0%;">Body Mass Index (BMI)</h1><br>
+        <label>Height:</label>
+        <input class="box" type="number" [(ngModel)]="height"><label>CM</label><br><br>
+        <label>Weight:</label>
+        <input class="box" type="number" [(ngModel)]="weight"><label>KG</label><br>
+        <br>
+        <button class="btn" (click)="cal()">Calculate</button>
+        <h1>Result:{{result}}</h1>
+    </div>
+</div>
