@@ -1,0 +1,10 @@
+.main{
+    margin-left: 220px;
+    text-align: center;
+    width:700px;
+    height:700px;
+    background-image: linear-gradient(rgb(205, 171, 171),yellow,rgb(149, 219, 149));
+    border: 2px solid greenyellow;
+    border-radius: 25px;
+    box-shadow: 8px 6px 7px black;
+}

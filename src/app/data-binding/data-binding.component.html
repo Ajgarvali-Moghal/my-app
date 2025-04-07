@@ -1,15 +1,49 @@
 <div class="main">
-    <h1 style="margin: 0;">data-binding</h1>
-    <!-- two way data binding -->
+    <!--<h1 style="margin: 0;">data-binding</h1>
+    two way data binding -->
     <!-- <input type="text" [(ngModel)]="mobile" (keyup)="submit()"> -->
-     <!-- calculator -->
+     <!-- calculator
     <h1>Calculator</h1>
     <h3>Result:{{result}}</h3>
     <label>Number 1:</label>
     <input type="number" [(ngModel)]="num1"><br>
     <label>Number 2:</label>
     <input type="number"[(ngModel)]="num2"><br><br>
-    <button class="btn" (click)="add()" [disabled]="!num1 || !num2">Add</button>
+    <button class="btn" (click)="add()" [disabled]="!num1 || !num2">Add</button> -->
+<!-- 
+ <input type="text" [(ngModel)]="ajgar" (keyup)="press()">
+ <h1>{{ajgar}}</h1> -->
+
+ <!-- <button class="btn btn-danger" (click)="clicking()">submit</button>
+ <input type="text" (keyup)="key()">
+
+ <h1>{{price}}</h1>
+ <h1>{{age}}</h1> -->
+ <!-- <button [disabled]="submit">submit</button> -->
+
+ <!-- <input type="text" [(ngModel)]="num">
+ <h1>{{num}}</h1> -->
+
+ <table border="2px">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>surname</th>
+            <th>mobile</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let num of number">
+            <td>{{num.name}}</td>
+            <td>{{num.surname}}</td>
+            <td>{{num.mobile}}</td>
+        </tr>
+    </tbody>
+ </table>
+
+ <p *ngIf="!isvisible">welcome</p>   
+ <p *ngIf="isvisible">Thank you</p>
+ 
 </div>
 
 

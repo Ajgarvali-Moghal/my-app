@@ -1,0 +1,27 @@
+.parent{
+    height:400px;
+    width:400px;
+    border:5px solid red;
+}
+.main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.image{
+    position:relative;
+    z-index: 1;
+}
+.author{
+    position: relative;
+    z-index: 2;
+    
+}
+.down{
+    width:100px;
+    height:50px;
+    position: relative;
+    z-index: 2;
+    display: block;
+    background-color: aqua;
+}

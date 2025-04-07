@@ -1,0 +1,33 @@
+<table style="background-color:white  ;" border="2px" [cellPadding]="20" [cellSpacing]="0 ">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Ratings</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let ajgar of products">
+            <td>{{ajgar.name | uppercase}}</td>
+            <td [ngStyle]="{'color':ajgar.price<2000 ? 'green' : 'red'}">{{ajgar.price | currency}}</td>
+            <td [ngClass]="{'green':ajgar.ratings>4,'red':ajgar.ratings<2,'yellow':ajgar.ratings>2&&ajgar.ratings<4}">{{ajgar.ratings}}</td>
+        </tr>
+    </tbody>
+</table>
+<ol>
+    <li *ngFor="let state of states">{{state}}</li>
+</ol>
+
+<ul>
+    <li *ngFor="let state of states">{{state}}</li>
+</ul>
+<select >
+    <option *ngFor="let state of states">{{state}}</option>
+</select>
+
+<p *ngIf="!isVisible">WELCOME</p>
+<p *ngIf="isVisible">THANK YOU</p>
+
+<h1>{{newDate |date:'dd/MM/yyyy'}}</h1>
+
+

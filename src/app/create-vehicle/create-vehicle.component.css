@@ -1,9 +1,8 @@
 form{
-    margin-left: 450px;
-    margin-top: 180px;
     background-color: rgb(127, 186, 167);
-    width:550px;
+    width:600px;
     height:400px;
-    padding: 90px;
+    padding: 50px;
+    text-align: center;
     border-radius: 25px;
 }

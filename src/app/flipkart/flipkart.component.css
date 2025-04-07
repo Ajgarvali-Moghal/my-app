@@ -1,0 +1,101 @@
+/* .green{
+    color:green;
+}
+.yellow{
+    color:yellow;
+}
+.red{
+    color:red;
+} */
+.main{
+    height: 100vh;
+    width:78vw;
+}
+.top{
+    height:8%;
+    width:100%;
+    background-color: rgb(37, 153, 153);
+    text-align: center;
+}
+.middle{
+    height:30%;
+    width:100%;
+    background-color: rgb(188, 144, 89);
+    display: flex;
+}
+.left{
+    padding-left: 10px;
+    height:100%;
+    width:50%;
+    background-color: rgb(37, 153, 153);
+}
+.right{
+    height:100%;
+    width:50%;
+    background-color: rgb(37, 153, 153);
+}
+.bottom{
+    height:62%;
+    width:100%;
+    background-color: blueviolet;
+}
+.text{
+    width:180px;
+    height:24px;
+}
+.btn{
+    width:140px;
+    height:30px;
+    border-radius: 25px;
+    background-color: rgb(197, 40, 119);
+    color: white;
+    box-shadow: 5px 5px 4px rgb(126, 61, 118);
+}
+.btn2{
+    width:140px;
+    height:30px;
+    border-radius: 25px;
+    background-color: rgb(197, 40, 40);
+    color: white;
+    box-shadow: 5px 5px 4px rgb(103, 33, 33);  
+}
+.btn3{
+    width:140px;
+    height:30px;
+    border-radius: 25px; 
+    background-color: rgb(40, 87, 197);
+    color: white;
+    box-shadow: 5px 5px 4px rgb(39, 44, 92); 
+}
+.btn4{
+    width:200px;
+    height:30px;
+    border-radius: 25px; 
+    background-color: rgb(40, 87, 197);
+    color: white;
+    box-shadow: 5px 5px 4px rgb(39, 44, 92);
+}
+.btn5{
+    width:100px;
+    height:30px;
+    border-radius: 25px; 
+    background-color: rgb(120, 90, 68);
+    color: white;
+    box-shadow: 5px 5px 4px rgb(54, 54, 38);
+}
+.btn6{
+    width:130px;
+    height:30px;
+    border-radius: 25px; 
+    background-color: rgb(120, 90, 68);
+    color: white;
+    box-shadow: 5px 5px 4px rgb(54, 54, 38);
+}
+.btn7{
+    width:110px;
+    height:30px;
+    border-radius: 25px; 
+    background-color: rgb(183, 172, 58);
+    color: white;
+    box-shadow: 5px 5px 4px rgb(122, 122, 55);
+}

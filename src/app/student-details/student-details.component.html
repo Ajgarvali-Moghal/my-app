@@ -1,0 +1,80 @@
+
+<div class="main">
+    <form [formGroup]="userForm">
+    <label>Name:</label>
+   <input type="text" formControlName="name"><br>
+   <!-- validators -->
+   <div *ngIf="userForm.get('name')?.touched && userForm.get('name')?.invalid">
+    <p *ngIf="userForm.get('name')?.errors?.['required']">*Name is Required</p>
+    <p *ngIf="userForm.get('name')?.errors?.['minlength']">*Name should be minimum of 6 characters</p> 
+    <p *ngIf="userForm.get('name')?.errors?.['maxlength']">*Name should be maximum of 12 characters</p>
+   </div>
+   <label>Class:</label>
+   <input type="number" formControlName="class"><br>
+   <label>Father Name:</label>
+   <input type="text" formControlName="fatherName"><br>
+   <label>Email:</label>
+   <input type="text" formControlName="email"><br>
+   <label>DOB:</label>
+   <input type="date" formControlName="date"><br><br>
+   
+
+   <!-- nestedForm --> 
+   <div formGroupName="address"> 
+    <label>Address:</label><br>
+    <label>Address-Line:</label>
+   <input type="text" formControlName="addressLine"><br>
+   <label>City:</label>
+   <input type="text" formControlName="city"><br>
+   <label>State:</label>
+   <input type="text" formControlName="state"><br>
+   <label>Pincode:</label>
+   <input type="text" formControlName="pincode"><br>
+   </div>
+<br>
+   <!-- formarray -->
+
+   <label>Marks:</label>
+<button (click)="addmarks()" class="btn btn-outline-warning">Add Marks</button><br><br>
+
+<div formArrayName="cards">
+    <div *ngFor="let card of cardsFormArray.controls; let i=index">
+        <div formGroupName="{{i}}">
+            <h2>Marks{{i+1}}</h2>
+            <label>Class:</label>
+            <input type="number" formControlName="class" placeholder="enter class"><br>
+            <label>Year:</label>
+            <input type="number" formControlName="year" placeholder="enter year"><br>
+            <label>Percentage:</label>
+            <input type="number" formControlName="percentage" placeholder="enter percentage"><br>
+            <button (click)="deletecard(i)" class="btn btn-danger">Remove Marks</button>
+
+        </div>
+
+    </div>
+
+</div>
+
+ <!-- DynamicForm -->
+   <label>Type:</label>
+<input type="radio" name="type" formControlName="type" value="dayScholar">
+<label>Day Scholar:</label>
+<input type="radio" name="type" formControlName="type" value="residential">
+<label>Residential:</label><br>
+
+<div *ngIf="userForm.get('type')?.value=='dayScholar'">
+    <label>Bus Fee:</label>
+    <input type="number" formControlName="busFee"><br>
+</div>
+
+<div *ngIf="userForm.get('type')?.value=='residential'">
+    <label>Hostel Fee:</label>
+    <input type="number" formControlName="hostelFee"><br><br>
+</div>
+ 
+
+
+
+   <button class="btn btn-outline-warning" (click)="submit()">Submit</button>
+</form>
+</div>

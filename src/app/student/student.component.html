@@ -1,0 +1,36 @@
+<div class="main">
+    <div class="parent" *ngFor="let student of students">
+        <div class="top">
+            <div class="top-left">
+                <img src="{{student.school_logo}}" alt="" height="100%" width="100%">
+            </div>
+            <div class="top-right">
+                <p style="text-align: center; padding-top: 20px;"><b>{{student.school_name}}</b></p>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="left">
+                <p>NAME:{{student.name}}</p>
+            <p>PHONE:{{student.phone}}</p>
+            <p>DOB:{{student.dob}}</p>
+            <p>CITY:{{student.city}}</p>
+            <p>EMAIL:{{student.email}}</p>
+            </div>
+            <div class="right">
+                <img src="{{student.profile_picture}}" alt="" height="100%" width="100%">
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bottom-top">
+                <p>School City:{{student.school_city}}</p>
+                <p>School Pin:{{student.school_pin}}</p>
+            </div>
+            <div class="bottom-bottom">
+                <button class="btn btn-warning">View</button>
+                <button class="btn btn-primary">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+            </div>
+            
+        </div>
+    </div>
+</div>
